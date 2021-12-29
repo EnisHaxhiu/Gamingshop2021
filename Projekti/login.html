@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta  name="viewport" content="width=device-width , initial-scale=1.0"> 
+        <title> GamingShop | Your real estate Solution</title>
+        <link rel="stylesheet"  href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                <a href="index.html">
+                    <img src="Images/ProjectLogo-removebg-preview.png" alt="logo here " width="125px" >
+                </a>
+
+                </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="index.html">Kryefaqja</a></li>
+                    <li><a href="produktet.html">Produktet</a></li>
+                    <li><a href="perne.html">Per ne</a></li>
+                    <li><a href="kontakti.html">Kontakti</a></li>
+                    <li><a href="dokumentacioni.html" target="_blank">Dokumentacioni</a></li>
+                    <li><a href="login.html">Llogaria</a></li>
+                </ul>
+            </nav>
+            <img src="Images/cart.png" alt="kartela ime" width="30px" height="30px;">
+            <img  src="Images/menu-icon.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+           
+        </div>
+    </div>
+        
+        <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="Images/kv-pd.png" width="100%">
+                    </div>
+                    
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span  onclick="login()"> Kyqu </span>
+                                <span  onclick="register()"> Regjistrohu </span>
+                                <hr id="Indicator"> 
+                            </div>
+                            
+                            <form id="LoginForm" method="get">
+                                
+                                <input type="text" placeholder="Emri i perdoruesit">
+                                <input type="password" placeholder="Fjalekalimi">
+                                <button type="submit" class="btn">Kyqu</button>
+                                <a href="">Keni harruar fjalekalimin ?</a>
+                                
+                            </form>
+                            
+                            <form id="RegForm" method="get">
+                                
+                                <input type="text" placeholder="Emri i perdoruesit">
+                                <input type="email" placeholder="Emaili">
+                                <input type="password" placeholder="Fjalekalimi">
+                                <button type="submit" class="btn">Regjistrohu</button>
+                                
+                            </form>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3> Shkarko Aplikacionin</h3>
+                        <p> Shkarko tani Aplikacionin tone ne Android dhe iOS</p>
+                        <div class="app-logo">
+                            <img src="Images/playstore-icon.png">
+                            <img src="Images/appstore-icon.png">
+
+                        </div>
+                    </div>
+                    
+                    <div class="footer-col-2">
+                        <h3> Te Gjitha Te Drejtat Te Rezervuara </h3>
+
+                           <p><b> GAMINGSHOP &#8482;</b></p> 
+                       
+                    </div>
+                    
+                    <div class="footer-col-3">
+                        <h3> Linqe te perdorshme</h3>
+                        <ul>
+                           <li><a href="#">Kuponet</a></li>
+                            <li><a href="#">Postim ne Blog</a></li>
+                            <li><a href="#">Politika e kthimit</a> </li>
+                            <li><a href="#">Bashkohuni </a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col-4">
+                        <h3> Na Ndiqni  </h3>
+                        <ul>
+                            <li>Facebook </li>
+                            <li>Instagram</li>
+                            <li>Twitter </li>
+                            <li>YouTube </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021 - GamerShop </p>
+            </div>
+        </div> 
+    </body>
+</html>
+
+
+
+
+<script>
+    var menuItems = document.getElementById("menuItems");
+    menuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(menuItems.style.maxHeight == "0px")
+        {
+            menuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+           menuItems.style.maxHeight = "0px"; 
+        }
+    }
+    
+    /*
+    ----------------------- Login ---------------------------
+    */
+    var LoginForm =document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+    
+    function register(){
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+    }
+     function login(){
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

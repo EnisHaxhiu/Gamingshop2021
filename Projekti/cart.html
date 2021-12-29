@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta  name="viewport" content="width=device-width , initial-scale=1.0"> 
+        <title>Pllake Ame Intel Z390 - GamingShop </title>
+        <link rel="stylesheet"  href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+    <div class="header ">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                <a href="index.html"><img src="Images/ProjectLogo-removebg-preview.png" alt="logo here " width="125px" ></a>
+
+                </div>
+            <nav>
+                <ul id="menuItems">
+                   <li><a href="index.html">Kryefaqja</a></li>
+                    <li><a href="produktet.html">Produktet</a></li>
+                    <li><a href="perne.html">Per ne</a></li>
+                    <li><a href="kontakti.html">Kontakti</a></li>
+                    <li><a href="dokumentacioni.html"  target="_blank">Dokumentacioni</a></li>
+                    <li><a href="login.html">Llogaria</a></li>
+                </ul>
+            </nav>
+            <img src="Images/cart.png" alt="kartela ime" width="30px" height="30px;">
+            <img  src="Images/menu-icon.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+         </div>
+        </div>
+        
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                    <th>Produktet</th>
+                    <th>Sasia</th>
+                    <th>Shuma Totale</th>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="p1/product1.jpg">
+                            <div>
+                                <p>Intel Z390, LGA 1151</p>
+                                <small>Qmimi : $268.50</small><br>
+                                <a href="#">Fshije</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input  type="number" value="1"></td>
+                    <td>$268.50</td>
+                </tr>
+                
+                 <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="p2/Product2.jpg">
+                            <div>
+                                <p>Monitor Samsung 27"</p>
+                                <small>Qmimi : $210.00</small><br>
+                                <a href="#">Fshije</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input  type="number" value="1"></td>
+                    <td>$210.00</td>
+                </tr>
+            </table>
+            
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td> Nen Qmimi Total</td>
+                        <td>$478.50</td>
+                    </tr>
+                    <tr>
+                        <td>TVSH</td>
+                        <td>$18.00</td>
+                    </tr>
+                    <tr>
+                        <td>Totali</td>
+                        <td>$496.50</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3> Shkarko Aplikacionin</h3>
+                        <p> Shkarko tani Aplikacionin tone ne Android dhe iOS</p>
+                        <div class="app-logo">
+                            <img src="Images/playstore-icon.png">
+                            <img src="Images/appstore-icon.png">
+
+                        </div>
+                    </div>
+                    
+                    <div class="footer-col-2">
+                        <h3> Te Gjitha Te Drejtat Te Rezervuara </h3>
+
+                           <p><b> GAMINGSHOP &#8482;</b></p> 
+                       
+                    </div>
+                    
+                    <div class="footer-col-3">
+                        <h3> Linqe te perdorshme</h3>
+                        <ul>
+                            <li><a href="#">Kuponet</a></li>
+                            <li><a href="#">Postim ne Blog</a></li>
+                            <li><a href="#">Politika e kthimit</a> </li>
+                            <li><a href="#">Bashkohuni </a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col-4">
+                        <h3> Na Ndiqni  </h3>
+                        <ul>
+                            <li>Facebook </li>
+                            <li>Instagram</li>
+                            <li>Twitter </li>
+                            <li>YouTube </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021 - GamerShop </p>
+            </div>
+        </div> 
+    </body>
+</html>
+
+
+
+<script>
+    /*
+    ------------------ Responsive web ---------------
+    */
+    var menuItems = document.getElementById("menuItems");
+    menuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(menuItems.style.maxHeight == "0px")
+        {
+            menuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+           menuItems.style.maxHeight = "0px"; 
+        }
+    }
+
+</script>
